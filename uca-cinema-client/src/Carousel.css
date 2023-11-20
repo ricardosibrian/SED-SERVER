@@ -1,0 +1,12 @@
+/* Ajusta la posición de las flechas */
+.slick-prev {
+    left: 15px;
+    z-index: 1;
+  }
+  
+  .slick-next {
+    right: 15px;
+    z-index: 1;
+  }
+  
+  

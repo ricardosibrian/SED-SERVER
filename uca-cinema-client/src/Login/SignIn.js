@@ -30,7 +30,7 @@ function SignInForm(props) {
     try {
       // Llamada a la API para autenticar
       const response = await axios.post(
-        "http://localhost:5000/api/auth/signin", {
+        "/api/auth/signin", {
           identifier: email,
           password: password
         });

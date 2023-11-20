@@ -38,7 +38,7 @@ export default function FormDialog() {
       // Verificar si hay un token antes de hacer la solicitud
       if (authToken) {
         // Realizar la solicitud POST con Axios, incluyendo el token en los encabezados
-        const response = await axios.post('http://localhost:5000/api/movie/create', {
+        const response = await axios.post('/api/movie/create', {
           title: movieTitle,
           description: genre,
           genre: 'default.png',

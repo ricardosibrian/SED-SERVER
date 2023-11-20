@@ -38,7 +38,7 @@ export default function PermanentDrawerLeft() {
 
     const fetchUserRole = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/whoami', {
+        const response = await axios.get('/api/auth/whoami', {
           headers: {
             authorization: `Bearer ${authToken}`
           }

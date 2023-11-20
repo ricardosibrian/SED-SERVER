@@ -30,7 +30,7 @@ export default function AlertDialog({id, fetchData}) {
     try {
       // Realiza la solicitud Axios para eliminar el usuario
       const response = await axios.delete(
-        'http://localhost:5000/api/user/deleteUser/', 
+        '/api/user/deleteUser/', 
         {
           headers: {
             'Content-Type': 'application/json', // Asegúrate de establecer el tipo de contenido

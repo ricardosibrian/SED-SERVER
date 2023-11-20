@@ -45,7 +45,7 @@ export default function FormDialog({id, fetchData}) {
   
       // Realizar la solicitud Axios para actualizar el rol
       const response = await axios.post(
-        'http://localhost:5000/api/user/updateRol',
+        '/api/user/updateRol',
         {
           id: id,
           rol: rol

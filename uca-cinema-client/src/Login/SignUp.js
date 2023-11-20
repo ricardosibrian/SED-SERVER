@@ -25,7 +25,7 @@ function SignUpForm() {
     if (state.password === state.repeat_password) {
     try {
       // Realizar la solicitud POST con Axios
-      const response = await axios.post('http://localhost:5000/api/auth/signup', {
+      const response = await axios.post('/api/auth/signup', {
         username: state.username,
         email: state.email,
         password: state.password,

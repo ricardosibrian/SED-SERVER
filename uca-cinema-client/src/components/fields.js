@@ -23,7 +23,7 @@ export default function BasicTextFields() {
   const authToken = localStorage.getItem("authToken");
 
   useEffect(() => {
-    axios.get('http://localhost:5000/api/auth/whoami', {
+    axios.get('/api/auth/whoami', {
       headers: {
         authorization: `Bearer ${authToken}`
       }
@@ -65,7 +65,7 @@ export default function BasicTextFields() {
     if (userData.newPassword === userData.repeatNewPassword) {
       try {
         const response = await axios.post(
-          'http://localhost:5000/api/auth/newprofile',
+          '/api/auth/newprofile',
           {
             id: userData.id,
             username: userData.username,
@@ -90,7 +90,7 @@ export default function BasicTextFields() {
         }));
   
         // Actualizar datos del usuario
-        const whoamiResponse = await axios.get('http://localhost:5000/api/auth/whoami', {
+        const whoamiResponse = await axios.get('/api/auth/whoami', {
           headers: {
             authorization: `Bearer ${authToken}`
           }

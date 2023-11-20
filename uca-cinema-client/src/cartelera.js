@@ -19,7 +19,7 @@ const Cartelera = () => {
     const authToken = localStorage.getItem("authToken");
 
     if (authToken) {
-      axios.get('http://localhost:5000/api/movie/', {
+      axios.get('/api/movie/', {
         headers: {
           authorization: `Bearer ${authToken}`
         }

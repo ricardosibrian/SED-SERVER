@@ -15,7 +15,7 @@ const DataTable = () => {
 
   const fetchUserRole = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/auth/whoami', {
+      const response = await axios.get('/api/auth/whoami', {
         headers: {
           authorization: `Bearer ${authToken}`
         }
@@ -30,7 +30,7 @@ const DataTable = () => {
     try {
       // Condiciona la solicitud en función del rol
       const route = userRole === 'admin' ? 'some' : '';
-      const response = await axios.get(`http://localhost:5000/api/user/${route}`, {
+      const response = await axios.get(`/api/user/${route}`, {
         headers: {
           authorization: `Bearer ${authToken}`
         }
